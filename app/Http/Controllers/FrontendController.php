@@ -44,4 +44,5 @@ class FrontendController extends Controller
         $data['items'] = Product::where('prod_name','like','%'.$result.'%')->get();
         return view('frontend.search',$data); 
     }
+	//data
 }
